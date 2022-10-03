@@ -29,12 +29,18 @@ const renderPockemon = async(pokeID) => {
     `
 }
 
-renderPockemon(1)
+const isEmpty=()=>{
+     alert("Debe introducir un ID para continuar");
+
+}
+const isWrong=()=>{
+    alert("No existen tantos pokemons");
+}
 btn.addEventListener("click", button);
 
 function button(e) {
     e.preventDefault();
     let pokeID = input.value.trim();
-    renderPockemon(pokeID)
+    pokeID=="" || pokeID==0?isEmpty():pokeID>905?isWrong():renderPockemon(pokeID)
     input.value = "";
 }
