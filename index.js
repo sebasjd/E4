@@ -24,8 +24,8 @@ const renderPockemon = async(pokeID) => {
     <img src="${sprites.other.home.front_default}" alt="${name}">
     <h1 id="name">${name}</h1>
     <section id="types">${types.map(type =>{return `<span class="type ${type.type.name}">${type.type.name}</span>`}).join("")}</section>
-    <h3 id="height">Altura:      <span>${height*10} Cm.</span></h3>
-    <h3 id="weight">Peso:     <span>${weight/10} Kgs.</span></h3>
+    <h3 id="height">Altura:<span>${height*10} Cm.</span></h3>
+    <h3 id="weight">Peso:<span>${weight/10} Kgs.</span></h3>
     `
 }
 
