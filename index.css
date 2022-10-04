@@ -20,6 +20,14 @@
         flex-direction: column;
     }
     
+    .start {
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 1.2px;
+        opacity: .8;
+        line-height: 40px;
+    }
+    
     #card {
         display: flex;
         position: relative;
@@ -32,6 +40,17 @@
         background-image: url(./backgraund.jpg);
         background-size: cover;
         box-shadow: 0px 0px 15px 14px rgba(250, 245, 231, .82);
+        justify-content: center;
+    }
+    
+    .vanish {
+        opacity: 0;
+        transition: .3s;
+    }
+    
+    .appear {
+        opacity: 1;
+        transition: .5s;
     }
     
     #id {
@@ -151,6 +170,7 @@
         background-image: url(./backgraund.jpg);
         background-size: cover;
         border: outset 3px rgb(169, 128, 4);
+        caret-color: rgba(1, 21, 54, .0);
     }
     
     #input:focus {
